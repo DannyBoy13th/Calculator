@@ -15,6 +15,7 @@ public class Provider implements OperationProvider {
     @Override
     public void initialize() {
         operations.add(new Add());
+        operations.add(new Subtract());
     }
 
     public void initExtraOperation(Operation operation) {

@@ -27,13 +27,16 @@ public class Calculator {
         BigDecimal result = BigDecimal.valueOf(0);
         parser.parse(expression);
 
-        for (Operation operation : operations){
-            if (operation.getOperator() != parser.getOperator()){
-                continue;
-            }
-            operatorFound = true;
+        for (Operation operation : operations) {
+
+            if (operation.getOperator() != parser.getOperator()) {
+           continue;
+        }
+
+        operatorFound = true;
 
             result = operation.count(parser.getOperands().get(0), parser.getOperands().get(1));
+
         }
         if (!operatorFound){
             System.out.println("Wrong expression");
