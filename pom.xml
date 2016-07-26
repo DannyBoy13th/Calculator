@@ -6,7 +6,7 @@
 
     <groupId>Calculator</groupId>
     <artifactId>Calculator</artifactId>
-    <version>3.0-FINAL</version>
+    <version>4.0-FINAL</version>
     <build>
         <plugins>
             <plugin>

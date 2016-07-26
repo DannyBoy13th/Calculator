@@ -19,6 +19,6 @@ public class Provider implements OperationProvider {
     }
 
     public void initExtraOperation(Operation operation) {
-
+        operations.add(operation);
     }
 }
